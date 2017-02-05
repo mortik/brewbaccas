@@ -17,3 +17,11 @@ configure :build do
   activate :asset_hash
   activate :relative_assets
 end
+
+activate :deploy do |deploy|
+  deploy.user = "brewbaccas"
+  deploy.build_before = true
+  deploy.method = :rsync
+  deploy.host = "brewbaccas.com"
+  deploy.path = "~/current"
+end

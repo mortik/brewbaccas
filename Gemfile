@@ -1,14 +1,14 @@
 source 'http://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.3.3'
 
 gem 'middleman'
+gem 'middleman-deploy'
 gem 'middleman-livereload'
-gem 'middleman-syntax'
-gem 'middleman-gh-pages'
 gem 'middleman-slim'
-gem 'redcarpet'
+gem 'middleman-syntax'
 gem 'nokogiri'
+gem 'redcarpet'
 
 gem 'bootstrap-sass'
 gem 'bourbon'
