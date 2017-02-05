@@ -3,14 +3,15 @@ source 'http://rubygems.org'
 ruby '2.3.3'
 
 gem 'middleman'
-gem 'middleman-deploy'
+gem 'middleman-deploy', git: 'https://github.com/nulltask/middleman-deploy.git', branch: 'feature/fix-test'
 gem 'middleman-livereload'
-gem 'middleman-slim'
+gem 'middleman-sprockets'
 gem 'middleman-syntax'
-gem 'nokogiri'
 gem 'redcarpet'
 
 gem 'bootstrap-sass'
 gem 'bourbon'
+
+gem 'slim'
 
 gem 'foreman'

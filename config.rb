@@ -10,7 +10,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :sass, line_comments: false
 
-sprockets.append_path File.join root, 'vendor'
+activate :sprockets
 
 configure :build do
   activate :minify_css
@@ -23,7 +23,7 @@ end
 activate :deploy do |deploy|
   deploy.user = "brewbaccas"
   deploy.build_before = true
-  deploy.method = :rsync
+  deploy.deploy_method = :rsync
   deploy.host = "brewbaccas.com"
   deploy.path = "~/current"
 end
