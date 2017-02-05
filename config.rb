@@ -1,3 +1,5 @@
+# encoding: utf-8
+# frozen_string_literal: true
 Encoding.default_external = 'utf-8'
 
 activate :livereload
