@@ -1,8 +1,8 @@
-/.bundle
+.bundle
 
-/build
+build/*
 
-/.sass-cache
-/.cache
+.sass-cache
+.cache
 
 .DS_Store
