@@ -22,7 +22,7 @@ class Deploy < Thor
   no_commands do
     private def build
       puts "Building current site..."
-      run %(middleman build)
+      run %(bundle exec middleman build)
     end
 
     private def deploy
